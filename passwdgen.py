@@ -1,7 +1,7 @@
 import random
 
 
-def string_generator():
+def charset_generator():
     charset = ""
     for i in range(33, 95):
         charset += (chr(i))
@@ -19,10 +19,6 @@ def password_generator(s):
     except ValueError:
         print('Only integers in the specified range recommended!')
 
-    # with open('password.txt', 'a') as out:
-    #     for i in range(0, passnumber):
-    #        out.write(f'{"".join(random.sample(s, passlen))}'+'\n')
-
     try:
         for i in range(0, password_number):
             print(f'{"".join(random.sample(s, password_length))}')
@@ -31,7 +27,7 @@ def password_generator(s):
 
 
 def main():
-    charset = string_generator()
+    charset = charset_generator()
     password_generator(charset)
 
 
