@@ -12,7 +12,7 @@ def password_generator(charset):
         print('Only integers in the specified range recommended!')
 
     try:
-
+        print("")
         for i in range(0, password_number):
             print(f'{"".join(random.sample(charset, password_length))}')
 

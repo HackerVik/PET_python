@@ -1,4 +1,4 @@
-from Utils import password_generator, charset_generator
+from com.codecool.passwdgen.utils import password_generator, charset_generator
 
 
 def main():
